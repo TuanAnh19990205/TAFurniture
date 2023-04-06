@@ -1,0 +1,212 @@
+.banner .head {
+    background: linear-gradient(to top, #00000080, #00000080), url("../img/Product/banner/bg-breadcrumb.jpg");
+    text-align: center;
+    padding: 150px 0 50px;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.banner .container {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.container .history-info .content {
+    text-align: center;
+}
+.history-info .content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #292929;
+}
+.history-info .content p {
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 7px 217px;
+}
+.history-info .content img {
+    width: 25%;
+    vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.features {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.features .row:first-child {
+    margin-bottom: 40px;
+}
+.features .title h2 {
+    color: #292929;
+    font-size: 20px;
+    font-weight: 600;
+}
+.features .content {
+    display: block;
+}
+.features .content p {
+    text-align: left;
+    color: #878787;
+    font-size: 16px;
+    font-weight: 300;
+}
+.features .content a {
+    color: #292929;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+.features .content a:hover {
+    transform: scale(0.6);
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.features .content i {
+    color: #878787;
+    vertical-align: middle;
+    font-size: 13px;
+    margin-left: 2px;
+}
+.features .percent h4 {
+    font-size: 15px;
+    font-weight: 200;
+    color: #292929;
+    line-height: 3;
+}
+.features .percent .progress-bar span {
+    font-size: 13px;
+}
+.percent .progress-bar {
+    background-color: #e0e0e0;
+    width: 470px;
+    height: 13px;
+    overflow: unset;
+}
+.progress-bar div {
+    height: 13px;
+    width: 0%;
+    background-color: var(--primary-color);
+}
+.progress-bar div > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -13px;
+    margin-right: -20px;
+    color: #181818;
+}
+.progress-bar .modern {
+    animation: modern 1.4s linear forwards;
+}
+.progress-bar .classic {
+    animation: classic 1.4s linear forwards;
+}
+.progress-bar .wooden {
+    animation: wooden 1.4s linear forwards;
+}
+@keyframes modern {
+    100% {
+        width: 86%;
+    }
+}
+@keyframes classic {
+    100% {
+        width: 77%;
+    }
+}
+@keyframes wooden {
+    100% {
+        width: 80%;
+    }
+}
+
+.features .col-lg-3 {
+    display: flex;
+}
+.features .pic i {
+    font-weight: 600;
+    margin-right: 12px;
+}
+.features .text h5 {
+    font-size: 16px;
+    color: #181818;
+}
+.features .text h6 {
+    font-weight: 200;
+    font-size: 14px;
+}
+.qas {
+    margin: 0 auto;
+    width: 70%;
+}
+.qas .title h2 {
+    color: #292929;
+    font-size: 20px;
+    font-weight: 600;
+}
+.faq {
+    border: none;
+    margin-top: 9px;
+}
+.faq .question {
+    cursor: pointer;
+}
+
+.faq .question i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.faq .question h3 {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.faq .answer p {
+    font-size: 12px;
+    padding-left: 17px;
+}
+.faq .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.faq.active .question i {
+    transform: rotate(90deg);
+    color: var(--primary-color);
+}
+.faq .question i {
+    transition: transform 0.4s ease-in;
+}
+.faq .question h3 {
+    transition: transform 0.4s ease-in;
+}
+.faq.active .question h3 {
+    color: var(--primary-color);
+}
+.faq.active .answer {
+    max-height: 60px;
+    animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.footer {
+    border-top: 1px solid rgb(227, 227, 227);
+    padding-top: 26px;
+}
